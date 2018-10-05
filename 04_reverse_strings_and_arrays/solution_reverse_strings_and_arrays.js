@@ -4,8 +4,11 @@
   
 */
 
-function recSmallestInt(arr) {
+function reverseStringsAndArrays(arr) {
   // write code here
+  
 
+  
 }
+
 

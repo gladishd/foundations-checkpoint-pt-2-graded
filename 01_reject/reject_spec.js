@@ -1,5 +1,7 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
 describe('reject function', () => {
-  window.isNegNum; // attaches the function isNegNum to the global window object
+  window.isNegNum; // attaches the function isNegNum to the global window object so we can set a spy on the functions to test if they are called.
   window.greaterThanThree;
 
   it("returns the values in the array that returned 'false' after the function argument is invoked", () => {

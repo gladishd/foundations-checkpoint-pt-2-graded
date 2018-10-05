@@ -1,3 +1,6 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
 describe('newObj function', () => {
   let LittleMouse;
   let value;

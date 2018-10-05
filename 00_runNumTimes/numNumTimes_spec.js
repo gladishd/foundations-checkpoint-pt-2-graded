@@ -1,3 +1,4 @@
+/* eslint-env jasmine */
 /* eslint-disable no-undef */
 describe('runNumTimes function', () => {
   it('takes a function as an argument, and runs that function num times', () => {

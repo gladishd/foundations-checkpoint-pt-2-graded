@@ -1,3 +1,5 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
 describe('useMapToUpperCase', () => {
   it('takes a string and returns an array', () => {
     const array = useMapToUpperCase('it is raining outside');
