@@ -1,6 +1,6 @@
 ### Reverse Strings and Arrays
 
-#### 10 Points
+#### 6 Points
 
 The `reverseStringsAndArrays` accepts an array as an argument and returns an array in reverse order. In addition, all nested arrays should also be reversed, e.g.
 
@@ -34,11 +34,4 @@ reverseStringsAndArrays([1, {property: [['two', 3], 'four' ]}, 'five']) // ==> r
 
 ```
 
-Overall, any string or array is reversed.
-
-
-
-
-
-
-
+Overall, any string or array needs to be reversed.
