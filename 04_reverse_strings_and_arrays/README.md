@@ -2,7 +2,7 @@
 
 #### 6 Points
 
-The `reverseStringsAndArrays` accepts an array as an argument and returns an array in reverse order. In addition, all nested arrays should also be reversed, e.g.
+The `reverseStringsAndArrays` function accepts an array as an argument and returns an array in reverse order. In addition, all nested arrays should also be reversed, e.g.
 
 ```js
 
@@ -21,7 +21,7 @@ reverseStringAndArrays([10,[20,'thirty', [40, 50, 60, 'seventy'], 80], 90])
 
 ```
 
-If an object has a property that is either a string or an array, the values should be reveresed (including nested arrays and strings), e.g.
+If an object is present and it has a property that is either a string or an array, the values should be reveresed (including nested arrays and strings), e.g.
 
 ```js
 
