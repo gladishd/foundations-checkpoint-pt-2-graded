@@ -6,8 +6,8 @@
 2. Go to your own newly created checkpoint repository on GitHub and **clone** the repo locally. The link is also given below, and should also appear at the bottom of this page after your press the fork button.
 
 ```
-$ git clone https://github.com/YOURUSERNAME/foundations-checkpoint-2-V2.git
-$ cd foundations-checkpoint-2-V2
+$ git clone https://github.com/YOURUSERNAME/foundations-checkpoint-pt-2.git
+$ cd foundations-checkpoint-pt-2
 ```
 
 
@@ -18,7 +18,7 @@ $ cd foundations-checkpoint-2-V2
 5. Run the test specs to test your code. To run the specs for a directory, you need to go into that directory and run the command `testem`.
 
 ```
-$ cd foundations-checkpoint-2
+$ cd foundations-checkpoint-pt-2
 $ testem
 TEST'EM 'SCRIPTS!
 Open the URL below in a browser to connect.
