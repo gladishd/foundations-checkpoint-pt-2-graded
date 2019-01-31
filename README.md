@@ -1,54 +1,80 @@
 ## Foundations Checkpoint 2
 
-## Setup
+### Getting Started:
 
-1. From the Foundations Checkpoint 2 V2, click on the **fork** button at the bottom of this page. This will **fork** a copy of the checkpoint repository to your account on Github
-2. Go to your own newly created checkpoint repository on GitHub and **clone** the repo locally. The link is also given below, and should also appear at the bottom of this page after your press the fork button.
+1. **Clone** the Checkpoint and `cd` (change directories) so you are in the Checkpoint's directory in your terminal.
 
+2. Before solving a problem, read the `README.md` file located in the problem's directory (folder). The `README.md` file provides a general overview of the problem and will give you additional context when reading the Test Specs.
+
+3. Write your solution code in the `solution_${problem-name}.js` file.
+
+4. Run the test specs to test your code. Prior to starting the checkpoint, it was instructed that you are are responsible for your development environment. Follow the instructions below to run the test specs:
+
+#### Option 1 - testem is globally installed
+
+- If you have been running `testem` by running the `testem` command in your terminal, you are ready to go. Run `testem` to run the test specs. If you receive any errors or you don't have `testem` globally installed, refer to option 2.
+
+```sh
+  $ cd ${name-of-the-checkpoint-repository}
+  $ testem
+  TEST'EM 'SCRIPTS!
+  Open the URL below in a browser to connect.
+  http://localhost:7357/
 ```
-$ git clone https://github.com/YOURUSERNAME/foundations-checkpoint-pt-2.git
-$ cd foundations-checkpoint-pt-2
+
+<hr>
+
+#### Option 2 - Install Testem Locally
+
+If you don't have `testem` installed globally on your machine, complete the following steps:
+
+1. Run the command:
+
+```sh
+$ npm install
 ```
 
-
-## Complete the specs
-
-3. Before completing each spec, read the README.md File located in each folder.
-4. Write your code in each `solution_*.js` file so that you can pass the specs in located in the `*_specs.js` files.
-5. Run the test specs to test your code. To run the specs for a directory, you need to go into that directory and run the command `testem`.
-
-```
 $ cd foundations-checkpoint-pt-2
 $ testem
 TEST'EM 'SCRIPTS!
 Open the URL below in a browser to connect.
 http://localhost:7357/
+
 ```
 
-## Spec Point Values
+<hr>
+
+### Point Distribution Overview:
+
+The total amount of points for each problem are listed below. Keep in mind, each test spec has a different "weight" or amount of points it is worth. In addition, you can receive partial credit even if your code isn't passing!
 
 - 00 - Run Num Times: 2.00
 - 01 - Reject Function: 5.00
 - 02 - Array Methods: 8.00
-- 03 - A Quarter: 7.00
-  - Note: the last test spec is +2 points extra credit. The whole problem is not extra credit, only the last test spec.
-- 04 - Reverse Strings and Arrays: 6.00
-- 05 - New Object: 6.00
+- 03 - Thrice: 7.00
+- 04 - Stack: 6.00
+- 05 - New Object: 4.00
 
+Total: 32 Points
 
-Total: 34 Points
+<hr>
+<br>
 
+### Submission
 
-## Submission
+When your time limit expires, **commit your changes and push them to your repository on GitHub to be graded in Learndot**.
 
-When you are passing all the specs, or have run out of time, commit your changes and push them up to your repository for the coding portion of the Checkpoint to be graded in Learndot.
+Make sure you press **Done** on the Checkpoint Page to finalize your Checkpoint submission when you are finished!
 
-Make sure you press **Done** for Checkpoint 2 on the Checkpoints Page to submit your Checkpoint when you are finished!
+**Example**
 
 ```
+
 $ git add -A
 $ git commit -m 'completed exercises'
-$ git push origin master
+\$ git push origin master
+
 ```
 
 Good luck!
+```

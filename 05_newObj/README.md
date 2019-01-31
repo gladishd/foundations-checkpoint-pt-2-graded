@@ -1,23 +1,37 @@
 ### The newObj Function
 
-#### 6 Points
+#### 4 Points
 
+Create the function "newObj" that takes a constructor function as an argument and returns an empty object that has an internal prototype linked to the constructor functions `.prototype` object.
 
-Create the function "newObj" that takes a constructor function as an argument.  The constructor function has additional properties on its `.prototype` property.  The `newObj` function returns an empty object.  The internal prototype (\__proto__) of the empty object will be the constructor function's `.prototype` object.  
+<hr>
 
-**Note: .\__proto__ should NOT be used in your solution**
+The object returned should have the following characteristics:
+
+- the object is empty (it doesn't have any key/value pairs)
+- the object's internal prototype is linked to the constructor functions `.prototype` object. The "constructor function" is the argument passed to `newObj`
+- Note: The goal is to create a relationship where the new object created from `newObj` has a specific internal prototype, not the default internal prototype for an object.
+
+**Note: Do NOT use .\_\_proto\_\_ in your solution**
 
 ```
+// Hello is a constructor function
 function Hello() {
   this.hello = "hello";
 }
 
-Hello.prototype.sayHello = "Hello";
+Hello.prototype.sayHello = function() {
+  return 'Hello!'
+};
 
-INPUT: var returnValue = newObj(Hello);
+// the argument passed to newObj is the Hello constructor function
+let obj = newObj(Hello);
 
-OUTPUT:
-// returnValue === {};
-// returnValue's internal prototype aka .\__proto__ is: {sayHello: "Hello"}
+// obj === {}; // the object returned from newObj is an empty object
+
+// Object.getPrototypeOf(obj) === Hello.prototype
+// Note: the .getPrototypeOf method returns the internal prototype of an object.
+
+*/
 
 ```

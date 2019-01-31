@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "testem": "^2.9.2"
+    "testem": "^2.14.0"
   }
 }
