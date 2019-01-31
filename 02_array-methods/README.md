@@ -9,7 +9,7 @@ All these functions were based on the methods built into the language (on the `A
 
 - `useMapToUpperCase` - use the Array.protoype.map within the `useMapToUpperCase` function. Remember, the `map` method can only be called on arrays (so you may need to convert the argument to an array). "map" each element so the strings are all upper case.
 
-- `useFilter` - use the Array.prototype.filter method to determine if the string has an `"@"`. (Array.prototype.includes will come in handy to determine if string has an `"@"`).
+- `useFilter` - use the Array.prototype.filter method to determine if the string has an `"@"`. (Array.prototype.includes will come in handy to determine if string has an `"@"` ).
 
 - `sumWithReduce` - calculate the sum of numbers in an array with reduce. The value returned should be a number.
 
