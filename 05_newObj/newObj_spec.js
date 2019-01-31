@@ -2,29 +2,25 @@
 /* eslint-disable no-undef */
 
 describe('newObj function', () => {
-  let LittleMouse;
-  let value;
+  function LittleMouse(color) {
+    this.sound = 'Squeak!';
+    this.color = color;
+  }
 
-  beforeEach(() => {
-    LittleMouse = function() {
-      this.sound = 'Squeak!';
-    };
-
-    LittleMouse.prototype.color = 'White';
-
-    // newObj is passed a constructor function
-    value = newObj(LittleMouse);
-  });
-
+  LittleMouse.prototype.makeSound = function() {
+    console.log(this.sound.toUpperCase());
+  };
   it('returns an empty object', () => {
-    expect(Object.keys(value).length).toEqual(0);
+    let obj = newObj(LittleMouse);
+    expect(typeof obj).toBe('object');
+    expect(Object.keys(obj).length).toBe(0);
   });
 
-  it('the internal prototype (__proto__) of the empty object (the value object) is LittleMouse.prototype object', () => {
-    expect(Object.getPrototypeOf(value)).toEqual(LittleMouse.prototype);
+  it('the internal prototype ( aka the __proto__) of the object returned from `newObj` is linked to the  LittleMouse.prototype object', () => {
+    let obj = newObj(LittleMouse);
+    expect(Object.getPrototypeOf(obj)).toEqual(LittleMouse.prototype);
     // Documentation for Object.getPrototypeOf(): https://mzl.la/2b3ohlm .
   });
-
   it('calls Object.create', () => {
     spyOn(Object, 'create').and.callThrough();
 

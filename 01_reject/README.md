@@ -8,13 +8,17 @@ Create the function `reject` that takes two arguments:
 
 - func: takes a function as its second argument
 
-The 'reject' function returns the values in the array that return "false" after the function (second argument) is called on each element of the Array.  Notice in the example below, all the 'odd' values in the initial array are returned since the expression in the function returns false for odd numbers.
+The 'reject' function returns the values in the array that return "false" after the function (second argument) is called on each element of the Array.
+
+In the example below, the `testWord` function accepts a word as an argument and returns `true` if the word length is greater than 3 and `false` if the word length is 3 or less than three.
+
+The `reject` function stores the words that returned `false` in the array the `reject` function returns.
 
 Example:
 
 ```
 const reject = function(arr, func){...}; // pseudocode for the reject function
-const getOdds = (num) => { return num % 2 == 0; }
-const odds = reject([1,2,3,4,5,6], getOdds);
-// odds = [1,3,5]
+const testWord = (word) => { return word.length > 3; }
+const listOfWords = reject(['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'], testWord);
+// listOfWords = ['one', 'two', 'six'];
 ```
