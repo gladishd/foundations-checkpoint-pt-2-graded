@@ -3,7 +3,7 @@
 #### 8 Points
 
 
-In Test First, you created your own `reduce`, `filter, and `map` functions.  
+In Test First, you created your own `reduce`, `filter`, and `map` functions.  
 
 All these functions were based on the methods built into the language (on the `Array.prototype`). In the challenges, use the `reduce`, `filter`, and `map` methods.
 
