@@ -83,7 +83,7 @@ Make sure you press **Done** on the Checkpoint Page to finalize your Checkpoint 
 
 $ git add -A
 $ git commit -m 'completed exercises'
-\$ git push origin master
+$ git push origin master
 
 ```
 
