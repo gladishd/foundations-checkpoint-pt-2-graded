@@ -34,12 +34,23 @@ If you don't have `testem` installed globally on your machine, complete the foll
 $ npm install
 ```
 
-$ cd foundations-checkpoint-pt-2
-$ testem
+Note: the command **needs to be executed inside of the foundations-checkpoint-pt-1 directory**.
+
+2. After the installation is complete, when you want to run `testem` run the command:
+
+```sh
+npm run test
+```
+
+3. Here are all of the steps:
+
+```sh
+$ cd ${name-of-the-checkpoint-repository}
+$ npm install
+$ npm run test
 TEST'EM 'SCRIPTS!
 Open the URL below in a browser to connect.
 http://localhost:7357/
-
 ```
 
 <hr>
