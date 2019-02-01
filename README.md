@@ -34,7 +34,7 @@ If you don't have `testem` installed globally on your machine, complete the foll
 $ npm install
 ```
 
-Note: the command **needs to be executed inside of the foundations-checkpoint-pt-1 directory**.
+Note: the command **needs to be executed inside of the checkpoint directory**.
 
 2. After the installation is complete, when you want to run `testem` run the command:
 
