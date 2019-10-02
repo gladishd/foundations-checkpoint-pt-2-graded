@@ -12,7 +12,7 @@ describe('runNumTimes function', () => {
     expect(myString).toEqual('hellohellohello');
   });
 
-  it('takes a function as an argument and rus that function num times', () => {
+  it('takes a function as an argument and runs that function num times', () => {
     let myArray = [];
     let count = 1;
 
