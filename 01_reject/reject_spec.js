@@ -1,12 +1,9 @@
 /* eslint-env jasmine */
 /* eslint-disable no-undef */
 describe('reject function', () => {
-  window.isNegNum; // attaches the function isNegNum to the global window object so we can set a spy on the functions to test if they are called.
-  window.greaterThanThree;
-
   it("returns the values in the array that returned 'false' after the function argument is invoked", () => {
     let arrayOfNumbers = [4, -57, 1778, -43, 9, 89, -345];
-    isNegNum = num => {
+    let isNegNum = num => {
       return num < 0;
     };
 
@@ -26,7 +23,7 @@ describe('reject function', () => {
       'function',
     ];
 
-    greaterThanThree = word => {
+    let greaterThanThree = word => {
       return word.length > 3;
     };
 
@@ -35,6 +32,16 @@ describe('reject function', () => {
   });
 
   it('checks that `isNegNum` and `greaterThanThree` are called when passed to `reject` function', () => {
+    /*  attaches the function isNegNum to the global window object 
+    so we can set a spy on the functions to test if they are called.
+    */
+
+    window.isNegNum = num => {
+      return num < 0;
+    };
+    window.greaterThanThree = word => {
+      return word.length > 3;
+    };
     spyOn(window, 'isNegNum').and.callThrough(); // checks if the function passed to reject is invoked
     spyOn(window, 'greaterThanThree').and.callThrough();
 
