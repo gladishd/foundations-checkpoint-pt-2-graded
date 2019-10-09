@@ -1,6 +1,6 @@
 ### Stack
 
-#### X Points
+#### 6 Points
 
 Create the class `Stack` that mimics the behavior of a Stack.
 

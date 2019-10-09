@@ -10,23 +10,7 @@
 
 4. Run the test specs to test your code. Prior to starting the checkpoint, it was instructed that you are are responsible for your development environment. Follow the instructions below to run the test specs:
 
-#### Option 1 - testem is globally installed
-
-- If you have been running `testem` by running the `testem` command in your terminal, you are ready to go. Run `testem` to run the test specs. If you receive any errors or you don't have `testem` globally installed, refer to option 2.
-
-```sh
-  $ cd ${name-of-the-checkpoint-repository}
-  $ testem
-  TEST'EM 'SCRIPTS!
-  Open the URL below in a browser to connect.
-  http://localhost:7357/
-```
-
-<hr>
-
-#### Option 2 - Install Testem Locally
-
-If you don't have `testem` installed globally on your machine, complete the following steps:
+#### NPM Install and NPM Test
 
 1. Run the command:
 
@@ -34,12 +18,12 @@ If you don't have `testem` installed globally on your machine, complete the foll
 $ npm install
 ```
 
-Note: the command **needs to be executed inside of the checkpoint directory**.
+Note: the command **needs to be executed inside of the foundations-checkpoint-pt-1 directory**.
 
 2. After the installation is complete, when you want to run `testem` run the command:
 
 ```sh
-npm run test
+npm test
 ```
 
 3. Here are all of the steps:
@@ -47,7 +31,7 @@ npm run test
 ```sh
 $ cd ${name-of-the-checkpoint-repository}
 $ npm install
-$ npm run test
+$ npm test
 TEST'EM 'SCRIPTS!
 Open the URL below in a browser to connect.
 http://localhost:7357/
@@ -88,4 +72,3 @@ $ git push origin master
 ```
 
 Good luck!
-

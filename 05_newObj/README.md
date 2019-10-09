@@ -14,7 +14,7 @@ The object returned should have the following characteristics:
 
 **Note: Do NOT use .\_\_proto\_\_ in your solution**
 
-```
+```js
 // Hello is a constructor function
 function Hello() {
   this.hello = "hello";
