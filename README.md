@@ -18,7 +18,7 @@
 $ npm install
 ```
 
-Note: the command **needs to be executed inside of the foundations-checkpoint**.
+Note: the command **needs to be executed inside of the foundations-checkpoint** directory.
 
 2. After the installation is complete, when you want to run `testem` run the command:
 
