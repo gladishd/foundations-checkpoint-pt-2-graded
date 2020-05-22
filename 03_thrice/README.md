@@ -2,7 +2,7 @@
 
 #### 7 Points
 
-The "thrice" function accepts a function object as an argument and **returns a function**. **The function returned invokes the function passed to `thrice` up to three times**. After the function returned from `thrice` invokes the function passed to `thrice` 4+ times, it returns the value `undefined`.
+The "thrice" function accepts a function object as an argument and **returns a function**. **The function returned invokes the function passed to `thrice` up to three times**. After the function returned from `thrice` invokes the function passed to `thrice` 4(+) times, it returns the value `undefined`.
 
 ```js
 const helloWorld = thrice(function() {
