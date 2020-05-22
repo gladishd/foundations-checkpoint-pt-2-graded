@@ -42,7 +42,7 @@ The total amount of points for each problem are listed below. Keep in mind, each
 - 03 - Thrice: 7.00
 - 04 - New Object: 4.00
 
-Total: 32 Points
+Total: 27 Points
 
 <hr>
 <br>
